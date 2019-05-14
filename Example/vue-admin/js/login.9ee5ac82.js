@@ -1,2 +1,0 @@
-(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["login"],{"255f":function(n,t,s){"use strict";var a=s("e147"),e=s.n(a);e.a},d9c9:function(n,t,s){"use strict";s.r(t);var a=function(){var n=this,t=n.$createElement,s=n._self._c||t;return s("div",{staticClass:"wrapper"},[s("div",{staticClass:"ang-login",attrs:{xs:4}},[n._v("\n    login\n  ")])])},e=[],i={},c=i,r=(s("255f"),s("2877")),l=Object(r["a"])(c,a,e,!1,null,"5fbd3136",null);t["default"]=l.exports},e147:function(n,t,s){}}]);
-//# sourceMappingURL=login.9ee5ac82.js.map

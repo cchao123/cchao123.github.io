@@ -1,2 +1,0 @@
-(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["content-admin-list"],{ef04:function(t,e,n){"use strict";n.r(e);var l=function(){var t=this,e=t.$createElement,n=t._self._c||e;return n("div",{staticClass:"wrapper"},[t._v(t._s(t.$route.fullPath)+" 我是内容管理列表")])},s=[],a={},r=a,u=n("2877"),c=Object(u["a"])(r,l,s,!1,null,null,null);e["default"]=c.exports}}]);
-//# sourceMappingURL=content-admin-list.e9621fca.js.map
