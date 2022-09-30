@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans" class="borderbox">
+<head>
+  <meta charset="utf-8" />
+  <link rel="dns-prefetch" href="//mat1.gtimg.com" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="" />
+  <meta property="og:description" content="" />
+  <meta property="og:image" content="https://mat1.gtimg.com/news/images/inews/2020/feiyan/img/h5-04.jpg" />
+  <link rel="shortcut icon" href="https://mat1.gtimg.com/news/images/inews/2020/feiyan/img/h5-04.jpg" />
+  <meta property="og:url" content="" />
+  <title>云游北京中轴线</title>
+  <meta http-equiv="Access-Control-Allow-Origin" content="*" />
+  <script type="text/javascript" src="https://beaconcdn.qq.com/sdk/3.3.1/beacon_web.min.js" charset="utf-8"></script>
+  <script src="https://res.wx.qq.com/open/js/jweixin-1.6.0.js"></script>
+  <script charset="utf-8" src="https://mat1.gtimg.com/www/js/emonitor/custom_ed041a23.js"></script>
+  <script charset="utf-8">
+    var emonitorIns = emonitor.create({
+      name: 'centralAxis',//项目名称
+      atta: {
+        name: 'newsinner',//产品名称
+      },
+      mode: '007',
+      onBeforeSend: function (data) {
+        // 过滤特定地址，例如过滤掉灯塔上报
+        if (data.url.indexOf("oth.eve.mdt.qq.com") >= 0) {
+          return false;
+        }
+      }
+    });
+  </script>
+  
+  <script type="module" crossorigin src="/assets/index.c0f3343a.js"></script>
+  <link rel="modulepreload" href="/assets/vendor.a5186888.js">
+  <link rel="stylesheet" href="/assets/index.4a891d62.css">
+</head>
+
+<body>
+  <div id="app"></div>
+  <div class="pageLoading">
+    <div class="loadingProgress">
+      <div><span class="progressNum">0%</span></div>
+    </div>
+  </div>
+  
+</body>
+</html>
+
+<script>
+  const scale = window.innerWidth / 720;
+  const metaEl = document.createElement('meta');
+  metaEl.setAttribute('name', 'viewport');
+  metaEl.setAttribute(
+    'content',
+    `width=device-width,initial-scale=${scale},maximum-scale=${scale},minimum-scale=${scale}, user-scalable=no`,
+  );
+  const firstElementChildEl = document.documentElement.firstElementChild;
+  firstElementChildEl?.appendChild(metaEl);
+  document.querySelector('.pageLoading').style = 'display: block';
+</script>
