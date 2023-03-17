@@ -105,21 +105,25 @@ PERFORMANCE OF THIS SOFTWARE.
     `}),QN=A=>`
       const text${A.compId} = new PIXI.Text('${A.textValue}', {
         fontSize: ${A.fontSize},
-        fill: ${A.fontColor},
-        fontWeight: ${A.fontWeight},
-      });`,UN=A=>({html2Canvas:FN(),pixiJs:QN(A)}),EN=A=>"1",SN=A=>`
-      const userHead${A.compId} = createSprite('${A.url}', {
-        width: ${A.width},
-        height: ${A.width},
-        x: ${A.point.x},
-        y: ${A.point.y},
+        fill: '${A.fontColor}',
+        fontWeight: '${A.fontWeight}',
       });
-      
-      const graphics = new PIXI.Graphics();
-      graphics.beginFill(0xe20d3f);
-      graphics.drawCircle(85, 88, ${A.width/2});
-      graphics.endFill();
-      userHead.mask = graphics;`,IN=A=>({html2Canvas:EN(),pixiJs:SN(A)}),xN=A=>"1",HN=A=>`
+      text${A.compId}.x = ${A.point.x};
+      text${A.compId}.y = ${A.point.y};
+      `,UN=A=>({html2Canvas:FN(),pixiJs:QN(A)}),EN=A=>"1",SN=A=>{const{width:e,point:t,compId:n,url:r}=A,{x:o,y:s}=t,i=e/2;return`
+      const userWrap${n}: PIXI.Container = new PIXI.Container();
+      userWrap${n}.x = ${o};
+      userWrap${n}.y = ${s};
+      const userHead${n} = createSprite('${r}', {
+        width: ${e},
+        height: ${e},
+      })
+      const graphics${n} = new PIXI.Graphics();
+      graphics${n}.beginFill(0xe20d3f);
+      graphics${n}.drawCircle(${i+o},${i+s}, ${i});
+      graphics${n}.endFill()
+      userWrap${n}.mask = graphics${n};
+      userWrap${n}.addChild(userHead${n});`},IN=A=>({html2Canvas:EN(),pixiJs:SN(A)}),xN=A=>"1",HN=A=>`
       const image${A.compId} = createSprite('${A.url}', {
         width: ${A.width},
         height: ${A.height},
